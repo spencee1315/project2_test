@@ -1,0 +1,9 @@
+{{!-- simple space for each new created blog post --}}
+{{#each posts as |post|}}
+
+{{> post-info post }}
+</div>
+
+{{else}}
+<h6 class="pb-4 has-text-centered is-italic">spoken tech-words have yet to be voiced.</h6>
+{{/each}}
