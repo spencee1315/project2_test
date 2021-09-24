@@ -1,31 +1,38 @@
-<div class="column">
-  <h2 class="title pb-4">create new account:</h2><hr>
-  <form class="signup-form">
-    <div>
-      <label for="username-signup">username:</label>
-      <input type="text" id="username-signup" />
+<video id="OURvideo" poster="img/OUR3_poster.jpg" autoplay muted loop>
+    <source src="video/OUR3.mp4" type="video/mp4">
+    <source src="video/OUR3/OUR3.webm" type="video/webm">
+</video>
+<main class="container animate__animated animate__fadeIn m-5-top">
+    <div class="row border-grey corner-med p-1" id="loginform">
+        <form class="col s12" method="POST" action="/api/v1/users/auth/signup">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" type="text" class="validate grey-text" name="first_name">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate grey-text" name="last_name">
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate grey-text" name="email">
+                    <label for="email">Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="password" type="password" class="validate grey-text" name="password">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <button
+                class="btn-large waves-effect waves-light m-1-top corner-med transparent border-grey grey-text text-lighten-3 roboto 400"
+                id="loginbtn" type="submit" vale="Submit">Register
+                <i class="material-icons right">check</i>
+            </button>
+        </form>
     </div>
-    <div>
-      <label for="email-signup">email:</label>
-      <input type="text" id="email-signup" />
-    </div>
-    <div>
-      <label for="twitter-signup">twitter:</label>
-      <input type="text" id="twitter-signup" />
-    </div>
-    <div>
-      <label for="github-signup">github:</label>
-      <input type="text" id="github-signup" />
-    </div>
-    <div>
-      <label for="password-signup">password:</label>
-      <input type="password" id="password-signup" />
-    </div>
-    <div>
-      <button type="submit" class="button is-primary">signup</button>
-    </div>
-  </form>
-</div>
-
-<!-- javascript file-->
-<script src="/js/signup.js"></script>
+</main>
+<script src="js/signup.js"></script>

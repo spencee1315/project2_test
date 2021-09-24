@@ -1,0 +1,16 @@
+<video id="OURvideo-echo" poster="img/echo_poster.jpg" class="animate__animated animate__fadeIn" autoplay muted loop>
+    <source src="OUR1/ink.mp4" type="video/mp4">
+    <source src="OUR1/ink/ink.webm" type="video/webm">
+</video>
+<main class="container animate__animated animate__fadeIn m-5-top reading m-5-bottom">
+    <div class="container flow-text">
+        <h1 class="zero roboto" id="title">{{title}}</h1>
+        <div id="preload">{{> preloader }}</div>
+        <p class="zero m-1-top roboto" id="subtitle"></p>
+        <p class="zero m-1-top roboto" id="author"></p>
+        <p class="charter grey-text text-darken-3 m-1-top" id="stats"></p>
+        <p class="m-5-top text-flow charter" id="content"></p>
+    </div>
+</main>
+
+<script src="js/read.js"></script>

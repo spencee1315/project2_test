@@ -1,0 +1,31 @@
+<div class="animate__animated animate__fadeIn" id="vid-contain">
+    <video id="videoBG" poster="img/OUR4_poster.jpg" autoplay muted loop>
+        <source src="video/OUR4/OUR4.webm" type="video/webm">
+        <source rc="video/OUR4.mp4" type="video/mp4">
+    </video>
+</div>
+
+<main class="container animate__animated animate__fadeIn" id="main">
+    <div class="row m-5-top">
+        <div class="col s3 border-grey corner-med charter grey-text text-lighten-2 p-1">
+            <!-- Grey navigation panel -->
+            <h3 class="roboto three zero">Featured:</h3>
+            <ul id="featured-list">
+                {{> preloader }}
+            </ul>
+            <h3 class="roboto three zero m-5-top">Topics:</h3>
+            <ul id="topic-list">
+                {{> preloader }}
+            </ul>
+        </div>
+
+        <div class="col s9">
+            <!-- Teal page content  -->
+            <ul class="zero" id="article-list">
+                {{> preloader }}
+            </ul>
+        </div>
+    </div>
+</main>
+
+<script src="js/home.js"></script>
